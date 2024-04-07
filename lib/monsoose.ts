@@ -2,12 +2,17 @@ import mongoose from "mongoose";
 
 let isConnected = false; // var to check if the connection is already open
 
-export const connectTODB = async () => {
+export const connectToDB = async () => {
   mongoose.set("strictQuery", true);
 
   if (!process.env.MONGODB_URL)
     return console.error("MongoDB URL is not provided");
 
   try {
-  } catch (error) {}
+    await mongoose.connect(process.env.MONGODB_URL);
+    isConnected = true;
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.log(error);
+  }
 };
