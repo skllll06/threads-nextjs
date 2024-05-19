@@ -1,0 +1,18 @@
+{
+  "search.exclude": {
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "liveshare.accessibility.soundVolume": 0,
+  "liveshare.accessibility.voiceVolume": 0,
+  "accessibility.signals.sounds.volume": 0,
+  "terminal.integrated.enableVisualBell": false
+}
